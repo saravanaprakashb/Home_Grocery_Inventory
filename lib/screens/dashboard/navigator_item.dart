@@ -3,6 +3,7 @@ import 'package:grocery_app/screens/account/account_screen.dart';
 import 'package:grocery_app/screens/cart/cart_screen.dart';
 import 'package:grocery_app/screens/categories_screen.dart';
 import 'package:grocery_app/screens/home/items_screen.dart';
+import 'package:isar/isar.dart';
 
 import '../favourite_screen.dart';
 

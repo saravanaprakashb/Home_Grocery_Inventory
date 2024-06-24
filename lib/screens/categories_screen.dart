@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:grocery_app/common_widgets/app_text.dart';
 import 'package:grocery_app/models/category_item.dart';
 import 'package:grocery_app/widgets/category_item_card_widget.dart';
-import 'package:grocery_app/widgets/search_bar_widget.dart';
+import 'package:grocery_app/isar_db/category.dart';
+import 'package:isar/isar.dart';
+
 
 import 'category_items_screen.dart';
 
@@ -25,7 +26,6 @@ class CategoriesScreen extends StatelessWidget {
         body: SafeArea(
       child: Column(
         children: [
-          getHeader(),
           Expanded(
             child: getStaggeredGridView(context),
           ),
@@ -34,37 +34,16 @@ class CategoriesScreen extends StatelessWidget {
     ));
   }
 
-  Widget getHeader() {
-    return Column(
-      children: [
-        SizedBox(
-          height: 20,
-        ),
-        Center(
-          child: AppText(
-            text: "Find Products",
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: SearchBarWidget(),
-        ),
-      ],
-    );
-  }
-
   Widget getStaggeredGridView(BuildContext context) {
+    final Future<Isar> isar;
+
     return SingleChildScrollView(
       padding: EdgeInsets.symmetric(
         vertical: 10,
       ),
       child: StaggeredGrid.count(
         crossAxisCount: 2,
+        //children: categoryItemsDemo.asMap().entries.map<Widget>((e) {
         children: categoryItemsDemo.asMap().entries.map<Widget>((e) {
           int index = e.key;
           CategoryItem categoryItem = e.value;
@@ -87,6 +66,7 @@ class CategoriesScreen extends StatelessWidget {
     );
   }
 
+
   void onCategoryItemClicked(BuildContext context, CategoryItem categoryItem) {
     Navigator.of(context).push(new MaterialPageRoute(
       builder: (BuildContext context) {
@@ -94,4 +74,5 @@ class CategoriesScreen extends StatelessWidget {
       },
     ));
   }
+
 }

@@ -1,8 +1,8 @@
+import 'package:grocery_app/isar_db/category.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
-
-import 'category.dart';
 import 'item.dart';
+import 'category.dart';
 
 class IsarService {
   late Future<Isar> db;
@@ -20,6 +20,13 @@ Future<void> saveItem(Item newItem) async{
   final isar = await db;
   isar.writeTxnSync<int>(() => isar.items.putSync(newItem));
 }
+
+  //Retrieve all users from the Isar database.
+  Future<List<Category>> getAllCategories() async {
+    final isar = await db;
+    //Find all users in the user collection and return the list.
+    return await isar.categorys.where().findAll();
+  }
 
 Future<Isar> openDB() async {
   var folderInWhichDbShallBeCreated = await getApplicationDocumentsDirectory();
