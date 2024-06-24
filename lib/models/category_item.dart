@@ -8,27 +8,51 @@ class CategoryItem {
 
 var categoryItemsDemo = [
   CategoryItem(
-    name: "Fresh Fruits & Vegetables",
-    imagePath: "assets/images/categories_images/fruit.png",
+    name: "Fruits",
+    imagePath: "assets/images/categories_images/fruits.png",
   ),
   CategoryItem(
-    name: "Cooking Oil",
-    imagePath: "assets/images/categories_images/oil.png",
+    name: "Vegetables",
+    imagePath: "assets/images/categories_images/vegetables.png",
   ),
   CategoryItem(
-    name: "Meat & Fish",
+    name: "Canned Foods",
+    imagePath: "assets/images/categories_images/cannedfoods.png",
+  ),
+  CategoryItem(
+    name: "Diaries",
+    imagePath: "assets/images/categories_images/diary.png",
+  ),
+  CategoryItem(
+    name: "Meat",
     imagePath: "assets/images/categories_images/meat.png",
   ),
   CategoryItem(
-    name: "Bakery & Snacks",
-    imagePath: "assets/images/categories_images/bakery.png",
+    name: "Seafoods",
+    imagePath: "assets/images/categories_images/seafood.png",
   ),
   CategoryItem(
-    name: "Dairy & Eggs",
-    imagePath: "assets/images/categories_images/dairy.png",
+    name: "Deli",
+    imagePath: "assets/images/categories_images/deli.png",
+  ),
+  CategoryItem(
+    name: "Spices",
+    imagePath: "assets/images/categories_images/spices.png",
+  ),
+  CategoryItem(
+    name: "Snacks",
+    imagePath: "assets/images/categories_images/snacks.png",
+  ),
+  CategoryItem(
+    name: "Bread & Backery",
+    imagePath: "assets/images/categories_images/breadbackery.png",
   ),
   CategoryItem(
     name: "Beverages",
     imagePath: "assets/images/categories_images/beverages.png",
+  ),
+  CategoryItem(
+    name: "Pasta, Rice & Cereal",
+    imagePath: "assets/images/categories_images/rice.png",
   ),
 ];

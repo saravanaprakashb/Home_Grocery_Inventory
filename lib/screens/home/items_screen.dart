@@ -4,12 +4,11 @@ import 'package:grocery_app/screens/product_details/product_details_screen.dart'
 import 'package:grocery_app/styles/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grocery_app/widgets/grocery_item_card_widget.dart';
-import 'package:grocery_app/widgets/search_bar_widget.dart';
 
 import 'grocery_featured_Item_widget.dart';
 import 'home_banner_widget.dart';
 
-class HomeScreen extends StatelessWidget {
+class ItemsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,65 +18,6 @@ class HomeScreen extends StatelessWidget {
             child: Center(
               child: Column(
                 children: [
-                  // SizedBox(
-                  //   height: 15,
-                  // ),
-                  // SvgPicture.asset("assets/icons/app_icon_color.svg"),
-                  // SizedBox(
-                  //   height: 5,
-                  // ),
-                  // padded(locationWidget()),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  padded(SearchBarWidget()),
-                  SizedBox(
-                    height: 25,
-                  ),
-                  // padded(HomeBanner()),
-                  // SizedBox(
-                  //   height: 25,
-                  // ),
-                  // padded(subTitle("Exclusive Order")),
-                  // getHorizontalItemSlider(exclusiveOffers),
-                  // SizedBox(
-                  //   height: 15,
-                  // ),
-                  // padded(subTitle("Best Selling")),
-                  // getHorizontalItemSlider(bestSelling),
-                  // SizedBox(
-                  //   height: 15,
-                  // ),
-                  //padded(subTitle("Groceries")),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Container(
-                    height: 105,
-                    child: ListView(
-                      padding: EdgeInsets.zero,
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        SizedBox(
-                          width: 20,
-                        ),
-                        GroceryFeaturedCard(
-                          groceryFeaturedItems[0],
-                          color: Color(0xffF8A44C),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        GroceryFeaturedCard(
-                          groceryFeaturedItems[1],
-                          color: AppColors.primaryColor,
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                      ],
-                    ),
-                  ),
                   SizedBox(
                     height: 15,
                   ),

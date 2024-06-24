@@ -18,7 +18,7 @@ List<Color> gridColors = [
   Color(0xffD73B77),
 ];
 
-class ExploreScreen extends StatelessWidget {
+class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
