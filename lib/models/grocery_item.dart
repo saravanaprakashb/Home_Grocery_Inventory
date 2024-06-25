@@ -59,6 +59,9 @@ var bestSelling = [demoItems[2], demoItems[3]];
 
 var groceries = [demoItems[4], demoItems[5]];
 
+var orderAgain = [demoItems[2], demoItems[3], beverages[0]];
+var recommendations = [demoItems[1], beverages[3], beverages[1]];
+
 var beverages = [
   GroceryItem(
       id: 7,
