@@ -58,7 +58,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                         ),
                         Spacer(),
                         Text(
-                          "\$${getTotalPrice().toStringAsFixed(2)}",
+                          "\₹${getTotalPrice().toStringAsFixed(2)}",
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -136,42 +136,6 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
           )
         ],
       ),
-    );
-  }
-
-  Widget nutritionWidget() {
-    return Container(
-      padding: EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        color: Color(0xffEBEBEB),
-        borderRadius: BorderRadius.circular(5),
-      ),
-      child: AppText(
-        text: "100gm",
-        fontWeight: FontWeight.w600,
-        fontSize: 12,
-        color: Color(0xff7C7C7C),
-      ),
-    );
-  }
-
-  Widget ratingWidget() {
-    Widget starIcon() {
-      return Icon(
-        Icons.star,
-        color: Color(0xffF3603F),
-        size: 20,
-      );
-    }
-
-    return Row(
-      children: [
-        starIcon(),
-        starIcon(),
-        starIcon(),
-        starIcon(),
-        starIcon(),
-      ],
     );
   }
 

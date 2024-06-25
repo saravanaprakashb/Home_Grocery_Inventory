@@ -41,7 +41,7 @@ class CategoriesScreen extends StatelessWidget {
         ),
         Center(
           child: AppText(
-            text: "Find Products",
+            text: "Categories",
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),

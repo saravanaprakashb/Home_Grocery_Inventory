@@ -21,7 +21,15 @@ class ItemsScreen extends StatelessWidget {
                   SizedBox(
                     height: 15,
                   ),
-                  getHorizontalItemSlider(groceries),
+                  getHorizontalItemSlider(fruitsList),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  getHorizontalItemSlider(diariesList),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  getHorizontalItemSlider(vegetableList),
                   SizedBox(
                     height: 15,
                   ),
@@ -80,41 +88,5 @@ class ItemsScreen extends StatelessWidget {
     );
   }
 
-  Widget subTitle(String text) {
-    return Row(
-      children: [
-        Text(
-          text,
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-        Spacer(),
-        Text(
-          "See All",
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: AppColors.primaryColor),
-        ),
-      ],
-    );
-  }
 
-  Widget locationWidget() {
-    String locationIconPath = "assets/icons/location_icon.svg";
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        SvgPicture.asset(
-          locationIconPath,
-        ),
-        SizedBox(
-          width: 8,
-        ),
-        Text(
-          "Khartoum,Sudan",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        )
-      ],
-    );
-  }
 }

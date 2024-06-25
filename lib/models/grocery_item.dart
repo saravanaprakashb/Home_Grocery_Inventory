@@ -14,206 +14,85 @@ class GroceryItem {
   });
 }
 
-var demoItems = [
-  GroceryItem(
-      id: 1,
-      name: "Organic Bananas",
-      description: "7pcs, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/banana.png"),
-  GroceryItem(
-      id: 2,
-      name: "Red Apple",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/apple.png"),
-  GroceryItem(
-      id: 3,
-      name: "Bell Pepper Red",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/pepper.png"),
-  GroceryItem(
-      id: 4,
-      name: "Ginger",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/ginger.png"),
-  GroceryItem(
-      id: 5,
-      name: "Meat",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/beef.png"),
-  GroceryItem(
-      id: 6,
-      name: "Chikken",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/chicken.png"),
-];
-
 var fruits = [
   GroceryItem(
       id: 1,
-      name: "Organic Bananas",
-      description: "7pcs, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/banana.png"),
-  GroceryItem(
-      id: 2,
-      name: "Red Apple",
-      description: "1kg, Priceg",
+      name: "Apple",
+      description: "7pcs",
       price: 4.99,
       imagePath: "assets/images/grocery_images/apple.png"),
   GroceryItem(
+      id: 2,
+      name: "Pineapple",
+      description: "1kg",
+      price: 6.99,
+      imagePath: "assets/images/grocery_images/pineapple.png"),
+  GroceryItem(
       id: 3,
-      name: "Bell Pepper Red",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/pepper.png"),
+      name: "Grapes",
+      description: "1kg",
+      price: 7.99,
+      imagePath: "assets/images/grocery_images/grapes.png"),
   GroceryItem(
-      id: 4,
-      name: "Ginger",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/ginger.png"),
-  GroceryItem(
-      id: 5,
-      name: "Meat",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/beef.png"),
-  GroceryItem(
-      id: 6,
-      name: "Chikken",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/chicken.png"),
+      id: 3,
+      name: "Banana",
+      description: "1kg",
+      price: 7.99,
+      imagePath: "assets/images/grocery_images/banana.png"),
 ];
 
 var Vegetables = [
   GroceryItem(
       id: 1,
-      name: "Organic Bananas",
-      description: "7pcs, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/banana.png"),
+      name: "Carrot",
+      description: "7pcs",
+      price: 12.00,
+      imagePath: "assets/images/grocery_images/carrot.png"),
   GroceryItem(
       id: 2,
-      name: "Red Apple",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/apple.png"),
+      name: "Beetroot",
+      description: "1kg",
+      price: 50.00,
+      imagePath: "assets/images/grocery_images/beetroot.png"),
   GroceryItem(
       id: 3,
-      name: "Bell Pepper Red",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/pepper.png"),
-  GroceryItem(
-      id: 4,
-      name: "Ginger",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/ginger.png"),
-  GroceryItem(
-      id: 5,
-      name: "Meat",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/beef.png"),
-  GroceryItem(
-      id: 6,
-      name: "Chikken",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/chicken.png"),
+      name: "Cabbage",
+      description: "1kg",
+      price: 45.99,
+      imagePath: "assets/images/grocery_images/cabbage.png"),
 ];
 
-var CannedFoods = [
+var Diaries = [
   GroceryItem(
       id: 1,
-      name: "Organic Bananas",
-      description: "7pcs, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/banana.png"),
+      name: "Milk",
+      description: "1 litre",
+      price: 27.99,
+      imagePath: "assets/images/grocery_images/milk.png"),
   GroceryItem(
       id: 2,
-      name: "Red Apple",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/apple.png"),
+      name: "Cheese",
+      description: "1.5kg",
+      price: 277.99,
+      imagePath: "assets/images/grocery_images/cheese.png"),
   GroceryItem(
       id: 3,
-      name: "Bell Pepper Red",
-      description: "1kg, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/pepper.png"),
-  GroceryItem(
-      id: 4,
-      name: "Ginger",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/ginger.png"),
-  GroceryItem(
-      id: 5,
-      name: "Meat",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/beef.png"),
-  GroceryItem(
-      id: 6,
-      name: "Chikken",
-      description: "250gm, Priceg",
-      price: 4.99,
-      imagePath: "assets/images/grocery_images/chicken.png"),
+      name: "Honey",
+      description: "1kg",
+      price: 99.99,
+      imagePath: "assets/images/grocery_images/honey.png"),
 ];
+
 
 // var exclusiveOffers = [demoItems[0], demoItems[1]];
 //
 // var bestSelling = [demoItems[2], demoItems[3]];
 //
- var groceries = [demoItems[4], demoItems[5]];
-//
- var orderAgain = [demoItems[2], demoItems[3], beverages[0]];
- var recommendations = [demoItems[1], beverages[3], beverages[1]];
 
-var beverages = [
-  GroceryItem(
-      id: 7,
-      name: "Dite Coke",
-      description: "355ml, Price",
-      price: 1.99,
-      imagePath: "assets/images/beverages_images/diet_coke.png"),
-  GroceryItem(
-      id: 8,
-      name: "Sprite Can",
-      description: "325ml, Price",
-      price: 1.50,
-      imagePath: "assets/images/beverages_images/sprite.png"),
-  GroceryItem(
-      id: 8,
-      name: "Apple Juice",
-      description: "2L, Price",
-      price: 15.99,
-      imagePath: "assets/images/beverages_images/apple_and_grape_juice.png"),
-  GroceryItem(
-      id: 9,
-      name: "Orange Juice",
-      description: "2L, Price",
-      price: 1.50,
-      imagePath: "assets/images/beverages_images/orange_juice.png"),
-  GroceryItem(
-      id: 10,
-      name: "Coca Cola Can",
-      description: "325ml, Price",
-      price: 4.99,
-      imagePath: "assets/images/beverages_images/coca_cola.png"),
-  GroceryItem(
-      id: 11,
-      name: "Pepsi Can",
-      description: "330ml, Price",
-      price: 4.99,
-      imagePath: "assets/images/beverages_images/pepsi.png"),
-];
+var fruitsList = fruits.map((name) => name).toList();
+var diariesList = Diaries.map((name) => name).toList();
+var vegetableList = Vegetables.map((name) => name).toList();
+
+//
+var orderAgain = [Vegetables[0], Diaries[2], fruits[0]];
+var recommendations = [Diaries[1], Vegetables[2], fruits[1]];

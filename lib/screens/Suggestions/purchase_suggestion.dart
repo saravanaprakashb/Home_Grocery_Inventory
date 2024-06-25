@@ -49,14 +49,6 @@ class Suggestions extends StatelessWidget {
           text,
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        Spacer(),
-        Text(
-          "See All",
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: AppColors.primaryColor),
-        ),
       ],
     );
   }

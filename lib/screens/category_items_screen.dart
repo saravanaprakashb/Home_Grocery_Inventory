@@ -23,9 +23,9 @@ class CategoryItemsScreen extends StatelessWidget {
           items = Vegetables;
           break;
         }
-      case "Canned Foods":
+      case "Diaries":
         {
-          items = CannedFoods;
+          items = Diaries;
           break;
         }
     }
