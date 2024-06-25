@@ -5,11 +5,31 @@ import 'package:grocery_app/models/grocery_item.dart';
 import 'package:grocery_app/screens/product_details/product_details_screen.dart';
 import 'package:grocery_app/widgets/grocery_item_card_widget.dart';
 
-import 'filter_screen.dart';
-
 class CategoryItemsScreen extends StatelessWidget {
+  final String category;
+  CategoryItemsScreen({super.key, required this.category});
+
   @override
   Widget build(BuildContext context) {
+    var items = [];
+    switch(category){
+      case "Fruits":
+          {
+            items = fruits;
+            break;
+          }
+      case "Vegetables":
+        {
+          items = Vegetables;
+          break;
+        }
+      case "Canned Foods":
+        {
+          items = CannedFoods;
+          break;
+        }
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -28,29 +48,12 @@ class CategoryItemsScreen extends StatelessWidget {
             ),
           ),
         ),
-        actions: [
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => FilterScreen()),
-              );
-            },
-            child: Container(
-              padding: EdgeInsets.only(right: 25),
-              child: Icon(
-                Icons.sort,
-                color: Colors.black,
-              ),
-            ),
-          ),
-        ],
         title: Container(
           padding: EdgeInsets.symmetric(
             horizontal: 25,
           ),
           child: AppText(
-            text: "Beverages",
+            text: category,
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
@@ -60,7 +63,7 @@ class CategoryItemsScreen extends StatelessWidget {
         child: StaggeredGrid.count(
           crossAxisCount: 2,
           // I only need two card horizontally
-          children: beverages.asMap().entries.map<Widget>((e) {
+          children: items.asMap().entries.map<Widget>((e) {
             GroceryItem groceryItem = e.value;
             return GestureDetector(
               onTap: () {

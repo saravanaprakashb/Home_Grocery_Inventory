@@ -44,5 +44,7 @@ Widget splashScreenIcon() {
   String iconPath = "assets/icons/splash_screen_icon.svg";
   return SvgPicture.asset(
     iconPath,
+    height: 200,
+    width: 200,
   );
 }
